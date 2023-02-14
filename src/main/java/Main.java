@@ -9,6 +9,10 @@ public class Main {
 
         List<Long> longsList = List.of(5L, 2L, 3L);
         System.out.println(toDouble(longsList));
+
+        Converter<Integer> converter = new Converter();
+        System.out.println(converter.toDouble(integersList));
+
     }
 
     public static List<Double> toDouble(List<? extends Number> list) {
