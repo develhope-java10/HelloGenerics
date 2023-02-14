@@ -10,8 +10,8 @@ public class Main {
         List<Long> longsList = List.of(5L, 2L, 3L);
         System.out.println(toDouble(longsList));
 
-        Converter<Integer> converter = new Converter();
-        System.out.println(converter.toDouble(integersList));
+        Converter<Double, Integer> converter = new Converter<>();
+        System.out.println(converter.toDouble(List.of(2.3,3.3,1.1)));
 
     }
 
