@@ -1,5 +1,6 @@
 import java.io.File;
 import java.io.IOException;
+import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
@@ -14,7 +15,7 @@ public class Main {
         String att4= converter2.getT();
 
         File filex = new File("test.txt");
-        ValueWriter <Integer> num = new ValueWriter(45);
+        ValueWriter <List<Integer>> num = new ValueWriter(List.of(3, 4, 5));
 
         try {
             num.save(filex);
